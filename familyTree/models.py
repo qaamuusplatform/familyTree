@@ -11,7 +11,8 @@ class BigParent(models.Model):
 
 
 class Parent(models.Model):
-    waalidka=models.ForeignKey(BigParent,on_delete=models.CASCADE,default=1)
+    bigWaalid=models.ForeignKey(BigParent,on_delete=models.CASCADE,default=1)
+    waalidka=models.ForeignKey("self", on_delete=models.CASCADE, null=True, blank=True)
     magacDhamaysiran=models.CharField(max_length=255)
     sawirka=models.ImageField(upload_to='sawirada/waalidinta',null=True,blank=True)
     magacKuGalid=models.CharField(max_length=255)
