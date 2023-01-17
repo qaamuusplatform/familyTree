@@ -1,5 +1,7 @@
+
 from django.db import models
 
+from django.utils.safestring import mark_safe
 # Create your models here.
 class BigParent(models.Model):
     magacDhamaysiran=models.CharField(max_length=255)
@@ -30,6 +32,8 @@ JINSIGA = (
     ('wiil','WIIL'),
     ('gabar', 'GABAR')
 )
+
+
 class PChild(models.Model):
     waalidka=models.ForeignKey(Parent,on_delete=models.CASCADE,default=1)
     magacDhamaysiran=models.CharField(max_length=255)
