@@ -19,7 +19,7 @@ class Parent(models.Model):
     faahfaahin=models.TextField(null=True,blank=True)
 
     def pSawirka(self):
-        if self.profileImage:
+        if self.sawirka:
             return mark_safe('<img src={} width="100px" >'.format(self.sawirka.url))
         else:
             return mark_safe('<img src={} width="100px" >'.format('https://st3.depositphotos.com/3581215/18899/v/450/depositphotos_188994514-stock-illustration-vector-illustration-male-silhouette-profile.jpg')) 
@@ -42,7 +42,7 @@ class PChild(models.Model):
     faahfaahin=models.TextField(null=True,blank=True)
 
     def cSawirka(self):
-        if self.profileImage:
+        if self.sawirka:
             return mark_safe('<img src={} width="100px" >'.format(self.sawirka.url))
         else:
             return mark_safe('<img src={} width="100px" >'.format('https://st3.depositphotos.com/3581215/18899/v/450/depositphotos_188994514-stock-illustration-vector-illustration-male-silhouette-profile.jpg')) 
