@@ -1,6 +1,6 @@
 from django.contrib import admin
 from familyTree.models import *
-from django.contrib.auth.models import Group, User
+from django.contrib.auth.models import *
 # Register your models here.
 
 admin.site.register(BigParent)
