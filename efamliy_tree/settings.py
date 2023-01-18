@@ -32,6 +32,7 @@ ALLOWED_HOSTS=config("ALLOWED_HOSTS").split(',')
 # Application definition
 
 INSTALLED_APPS = [
+    'channels',
     'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -75,7 +76,7 @@ ROOT_URLCONF = 'efamliy_tree.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR],
+        'DIRS': [TEMPLATES_DIR],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
