@@ -42,6 +42,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'familyTree',
 ]
+
+ASGI_APPLICATION = 'efamliy_tree.asgi.application'
+
 JAZZMIN_SETTINGS = {
      "site_title": "FAMILY TREE",
      "site_header": "E-Learning",
