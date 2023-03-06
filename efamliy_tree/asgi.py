@@ -15,7 +15,7 @@ from channels.auth import AuthMiddlewareStack
 
 import familyTree.routing
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'efamliy_tree.settings')
- 
+
 application = ProtocolTypeRouter({
     'http':get_asgi_application(),
     'websocket':AuthMiddlewareStack(
